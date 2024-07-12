@@ -5,10 +5,13 @@ def binary_search(nums, target):
     while left <= right:
         mid_idx = (left + right) // 2
         mid_el = nums[mid_idx]
+
         if mid_el == target:
             return mid_idx
+        
         if target > mid_el:
             left = mid_idx + 1
+            
         else:
             right = mid_idx - 1
 
