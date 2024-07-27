@@ -7,16 +7,12 @@ def print_board(board):
 def can_place_queen(row, col, rows, cols, left_diagonals, right_diagonals):
     if row in rows:
         return False
-    
     if col in cols:
         return False
-    
     if (row - col) in left_diagonals:
         return False
-    
     if (row + col) in right_diagonals:
         return False
-    
     return True
 
 
@@ -50,5 +46,4 @@ def put_queens(row, board, rows, cols, left_diagonals, right_diagonals):
 n = 8
 board = []
 [board.append(["-"] * n) for _ in range(8)]
-
 put_queens(0, board, set(), set(), set(), set())
