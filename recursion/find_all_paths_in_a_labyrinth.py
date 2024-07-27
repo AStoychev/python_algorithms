@@ -23,7 +23,6 @@ rows = int(input())
 cols = int(input())
 # rows = 3
 # cols = 3
-
 lab = []
 
 for _ in range(rows):
